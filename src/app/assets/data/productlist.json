@@ -1,0 +1,42 @@
+[
+    {
+        "id":1,
+        "brand":"POCO X5",
+        "name": "Metro station in Iphone",
+        "size":"4.xMB",
+        "price":2,
+        "image":"image1.jpg"
+    },
+    {
+        "id":2,
+        "brand":"POCO X5",
+        "name": "Metro station in Iphone",
+        "size":"4.xMB",
+        "price":3,
+        "image":"image2.jpg"
+    },
+    {
+        "id":3,
+        "brand":"POCO X5",
+        "name": "Metro station in Iphone",
+        "size":"4.xMB",
+        "price":5,
+        "image":"image3.jpg"
+    },
+    {
+        "id":4,
+        "brand":"POCO X5",
+        "name": "Metro station in Iphone",
+        "size":"4.xMB",
+        "price":10,
+        "image":"image4.jpg"
+    },
+    {
+        "id":5,
+        "brand":"POCO X5",
+        "name": "Metro station in Iphone",
+        "size":"4.xMB",
+        "price":12,
+        "image":"image5.jpg"
+    }
+]
