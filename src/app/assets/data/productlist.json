@@ -10,24 +10,24 @@
     {
         "id":2,
         "brand":"POCO X5",
-        "name": "Metro station in Iphone",
-        "size":"4.xMB",
+        "name": "Wide Metro Station",
+        "size":"0.5xMB",
         "price":3,
         "image":"image2.jpg"
     },
     {
         "id":3,
         "brand":"POCO X5",
-        "name": "Metro station in Iphone",
-        "size":"4.xMB",
+        "name": "Taj Mahal in Waste to Wonder",
+        "size":"3.xMB",
         "price":5,
         "image":"image3.jpg"
     },
     {
         "id":4,
         "brand":"POCO X5",
-        "name": "Metro station in Iphone",
-        "size":"4.xMB",
+        "name": "Taj Mahal in Waste to Wonder",
+        "size":"3.xMB",
         "price":10,
         "image":"image4.jpg"
     },
@@ -38,5 +38,13 @@
         "size":"4.xMB",
         "price":12,
         "image":"image5.jpg"
+    },
+    {
+        "id":6,
+        "brand":"POCO X5",
+        "name": "Wide Metro Station",
+        "size":"0.5xMB",
+        "price":3,
+        "image":"image2.jpg"
     }
 ]
