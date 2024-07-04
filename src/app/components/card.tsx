@@ -40,7 +40,8 @@ const Card = ({ id, brand, name, size, price, image }: cardProps) => {
         <img
           className=" w-full object-cover"
           src={`/images/${image}`}
-          alt="T-shirts"
+          alt={name}
+          loading="lazy"
         />
       </div>
       <div className="px-6">
