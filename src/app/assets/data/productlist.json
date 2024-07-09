@@ -5,7 +5,7 @@
         "name": "Metro station in Iphone",
         "size":"4.xMB",
         "price":2,
-        "image":"image1.jpg"
+        "imageUrl":"image1.jpg"
     },
     {
         "id":2,
@@ -13,7 +13,7 @@
         "name": "Wide Metro Station",
         "size":"0.5xMB",
         "price":3,
-        "image":"image2.jpg"
+        "imageUrl":"image2.jpg"
     },
     {
         "id":3,
@@ -21,7 +21,7 @@
         "name": "Taj Mahal in Waste to Wonder",
         "size":"3.xMB",
         "price":5,
-        "image":"image3.jpg"
+        "imageUrl":"image3.jpg"
     },
     {
         "id":4,
@@ -29,7 +29,7 @@
         "name": "Taj Mahal in Waste to Wonder",
         "size":"3.xMB",
         "price":10,
-        "image":"image4.jpg"
+        "imageUrl":"image4.jpg"
     },
     {
         "id":5,
@@ -37,7 +37,7 @@
         "name": "Metro station in Iphone",
         "size":"4.xMB",
         "price":12,
-        "image":"image5.jpg"
+        "imageUrl":"image5.jpg"
     },
     {
         "id":6,
@@ -45,6 +45,6 @@
         "name": "Wide Metro Station",
         "size":"0.5xMB",
         "price":3,
-        "image":"image2.jpg"
+        "imageUrl":"image2.jpg"
     }
 ]

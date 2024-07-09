@@ -13,7 +13,7 @@ const products = () => {
             name={product.name}
             size={product.size}
             price={product.price}
-            image={product.image}
+            image={product.imageUrl}
           />
         ))}
       </div>
