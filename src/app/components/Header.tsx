@@ -20,12 +20,7 @@ const Header = () => {
     return undefined;
 }
   const handleProfilePage = async () => {
-    const user = getCookie('shit_user');
-        if (user) {
-            router.push(`/profile/${user}`);
-        } else {
-            console.error('User cookie not found');
-        }
+    router.push(`/profile/${getCookie('shit_user')}`);
   }
   return (
     <header className="bg-gray-800 text-white py-4 shadow-lg">
