@@ -24,9 +24,9 @@ export default function ProfilePage({ params }: any) {
         if (user) {
             router.push(`/profile/${user}`);
         } else {
-            console.error('User cookie not found');
+            router.push('/login');
         }
-    }, [router]);
+    }, []);
 
     return null;
 }

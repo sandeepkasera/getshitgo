@@ -24,7 +24,7 @@ const Header = () => {
         if (user) {
             router.push(`/profile/${user}`);
         } else {
-            console.error('User cookie not found');
+          router.push('/login');
         }
   }
   return (
@@ -56,7 +56,7 @@ const Header = () => {
           </li>
           <li className="p-4 md:p-0 md:mx-2 hover:text-gray-300">
             <button onClick={handleProfilePage} className="text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
-              <CgProfile  />Profile
+              <CgProfile />Profile
             </button>
           </li>
         </ul>
