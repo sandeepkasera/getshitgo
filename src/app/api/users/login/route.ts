@@ -34,7 +34,6 @@ export async function POST(request: NextRequest) {
             email: user.email
         }
         // create token
-        console.log("token", process.env.TOKEN_SECRET)
         const token_secret = process.env.TOKEN_SECRET
         if (!token_secret) {
             throw new Error("TOKEN_SECRET environment variable is not set");
@@ -47,6 +46,9 @@ export async function POST(request: NextRequest) {
         })
         response.cookies.set("token", token, {
             httpOnly: true,
+        })
+        response.cookies.set("shit_user", user.username, {
+            httpOnly: false,
         })
         return response;
 
