@@ -19,6 +19,14 @@ export default function ProfilePage({ params }: any) {
         return undefined;
     }
 
-    router.push(`/profile/${getCookie('shit_user')}`);
+    useEffect(() => {
+        const user = getCookie('shit_user');
+        if (user) {
+            router.push(`/profile/${user}`);
+        } else {
+            router.push('/login');
+        }
+    }, []);
 
+    return null;
 }

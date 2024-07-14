@@ -12,15 +12,20 @@ const Header = () => {
     const value = `; ${document.cookie}`;
     const parts = value.split(`; ${name}=`);
     if (parts.length === 2) {
-      const part = parts.pop();
-      if (part) {
-        return part.split(';').shift();
-      }
+        const part = parts.pop();
+        if (part) {
+            return part.split(';').shift();
+        }
     }
     return undefined;
-  }
+}
   const handleProfilePage = async () => {
-    router.push(`/profile/${getCookie('shit_user')}`);
+    const user = getCookie('shit_user');
+        if (user) {
+            router.push(`/profile/${user}`);
+        } else {
+          router.push('/login');
+        }
   }
   return (
     <header className="bg-gray-800 text-white py-4 shadow-lg">
