@@ -22,9 +22,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <CartLayout>
+        <div className="min-h-screen flex flex-col">
           <Header/>
-          {children}
+          <main className="flex-grow">{children}</main>
           <Footer/>
+        </div>
         </CartLayout>
       </body>
     </html>
