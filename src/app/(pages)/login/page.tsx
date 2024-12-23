@@ -15,7 +15,8 @@ export default function LoginPage() {
     const [loading, setLoading] = React.useState(false);
     const [error, setError] = React.useState("");
 
-    const onLogin = async () => {
+    const onLogin = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
         try {
             setLoading(true);
             const response = await axios.post("/api/users/login", user);
@@ -40,6 +41,7 @@ export default function LoginPage() {
         <section className="flex items-center justify-center w-full xs:h-80vh">
             <form
                 className="xs:p-10	w-full max-w-350 flex flex-col justify-between items-center border border-solid border-[#2E2E2E] bg-[#0A0A0A] rounded-md"
+                onSubmit={onLogin}
             >
                 {error && (
                     <div className="text-[#FF6166] flex items-center justify-center gap-2">
@@ -74,7 +76,7 @@ export default function LoginPage() {
                             required
                             placeholder="Email"
                         />
-                        <label htmlFor="password" className="w-full">Password:</label><br/>
+                        <label htmlFor="password" className="w-full">Password:</label><br />
                         <input
                             id="password"
                             type="password"
@@ -86,13 +88,13 @@ export default function LoginPage() {
                         />
                     </div>
                     <div className="">
-                    <button
-                        onClick={onLogin}
-                        className="flex text-[#A1A1A1] items-center justify-center transition my-2 duration-150 py-2 px-2 bg-black border border-solid rounded border-[#2E2E2E] ease hover:bg-[#1F1F1F]"
-                    >
-                        Login Here
-                    </button>
-                    <Link href="/signup" >Visit Signup Page</Link>
+                        <button
+                            type="submit"
+                            className="flex text-[#A1A1A1] items-center justify-center transition my-2 duration-150 py-2 px-2 bg-black border border-solid rounded border-[#2E2E2E] ease hover:bg-[#1F1F1F]"
+                        >
+                            Login Here
+                        </button>
+                        <Link href="/signup" >Visit Signup Page</Link>
                     </div>
                 </div>
             </form>
